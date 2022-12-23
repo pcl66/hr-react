@@ -5,6 +5,7 @@ import { Departments } from '../../pages/Departments'
 import { Employee } from '../../pages/Employee'
 import { Settings } from '../../pages/Settings'
 import { Permission } from '../../pages/Permissions'
+import { Carousel } from '../../components/carousel'
 export const Content = () => {
   return (
     <ContentStyled>
@@ -13,6 +14,7 @@ export const Content = () => {
       <Route path={'/employees'} component={Employee}></Route>
       <Route path={'/settings'} component={Settings}></Route>
       <Route path={'/permission'} component={Permission}></Route>
+      <Route path={'/carousel'}><Carousel autoPlay={false}/></Route>
     </ContentStyled>
   )
 }
